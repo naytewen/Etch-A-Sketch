@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+
+    <div class = "heading">
+        <h1>Etch-A-Sketch</h1>
+    </div>
+
+    <div class = "main">
+
+        <div class = "menu">
+        
+            <button id = "black" onclick= "colorChange('black')">BLACK</button>
+            <button id = "eraser" onclick= "colorChange('rgb(232, 218, 218)')" >ERASER</button>
+            <button id = "rainbow" onclick= "colorChange('random')">RAINBOW</button>
+            <button id = "clear" onclick = "resetBoard()">CLEAR</button>
+            <div>
+                <button id = size>Set size</button>
+                <input type = "text" placeholder="What size for your board?" value = "16" onchange = "changeGrid(this.value)"/>
+            </div>
+            
+        </div>
+
+        
+
+        <div class = "container">
+            <div class = "grid"></div>
+        </div>
+
+    </div>
+    
+    <script src = "script.js"></script>
+</body>
+</html>
